@@ -43,7 +43,7 @@ export const getChainId = async (callback) => {
     if (callback) callback(chainId)
     return chainId
   } catch (err) {
-    console.log(err)
+    console.log('Failed to get chainId', err)
   }
 }
 
